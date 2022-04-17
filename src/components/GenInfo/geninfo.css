@@ -1,0 +1,20 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(219, 192, 133);
+  margin: 0 0 1em 0;
+}
+.form-container > input {
+  padding: 1em;
+  background: none;
+  border-bottom: 2px solid black;
+}

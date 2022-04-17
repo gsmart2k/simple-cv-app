@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
-}
+/** @format */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: url("/public/5622975.jpg");
+  background-size: contain;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.info-div {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.info-div > h5 {
+  font-size: 1em;
+}
+#line {
+  width: 20%;
+  height: 0.05em;
+  background: #000;
+  margin: 0 1em;
+}
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 1em;
+  width: 45%;
+}
+.practical-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1em 4em;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: rgb(219, 192, 133);
+  /* margin: 2em; */
+  padding: 2em;
 }
-
-.App-link {
-  color: #61dafb;
+.label-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label-div > label {
+  width: 30%;
+}
+.label-div > input {
+  padding: 1em;
+  background: #fff;
+  border: none;
+  margin: 1em;
+  width: 70%;
+  outline: none;
+}
+input:hover {
+  background: rgb(209, 204, 204);
+}
+.form-container-practicalexp {
+  background: rgb(219, 192, 133);
+  width: 100%;
+}
+::placeholder {
+  color: #000;
+}
+.new-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: 2em;
+}
+.new-section > p {
+  font-weight: bolder;
+}
+#add-btn {
+  font-weight: bold;
+  color: #fff;
+  /* margin: 0 1em 0 0; */
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  height: 2em;
+  width: 2em;
+  margin: 0 1em 0 0;
+  border-radius: 50%;
+  background: black;
+  padding: 0.5em;
+}
+#saveBtn {
+  padding: 1em;
+  justify-self: flex-end;
+  background: #000;
+  outline: none;
+  border: none;
+  color: #fff;
+  margin: 0 2em;
+  cursor: pointer;
 }
